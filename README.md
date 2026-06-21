@@ -65,15 +65,3 @@ mvn exec:java -Dexec.args="generate 10 --email destino@example.com"
 
 La base de datos conserva restricciones `UNIQUE` para documento y nombre/apellido, incluso entre ejecuciones. Las estructuras concurrentes evitan duplicados durante generación paralela.
 
-## Publicación
-
-```bash
-git init
-git add .
-git commit -m "feat: implement GreenSQA LATAM automation POC"
-git branch -M main
-git remote add origin <URL_DEL_REPOSITORIO_PUBLICO>
-git push -u origin main
-```
-
-No se incluyen credenciales ni archivos generados en Git gracias a `.gitignore`.
